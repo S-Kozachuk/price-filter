@@ -19,11 +19,15 @@ console.log(courses[3].name [11]);
 	// Доступ к значению вложенного массива
 console.log(courses[0].prices[0]);
 
+// Вывод значений вложенного массива (доступ к ценам)
+console.log(courses[2]. prices)
+
 
 // Варианты цен (фильтры), которые ищет пользователь
 let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
+
 
 
 

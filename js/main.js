@@ -10,7 +10,7 @@ let courses = [
 	{ name: "Courses in France", prices: [null, null] },
 ];
 
-// Вывов значений объекта
+// Вызов значений объекта
 result = Object.keys(courses);
 	// Получение значения name
 console.log(courses[3].name);
@@ -50,19 +50,12 @@ console.log(filterResult)
 console.log(requiredRange1 [0])
 // Параметры фильтра (значения массива)
 console.log(requiredRange2)
+searchResult = [];
 
+for (let i = 0; i <= courses; i++) {
+	if (requiredRange1 == courses[i]){
+		searchResult = courses[i]
+	}
+}
 
-// Мысли
-/*
-Вместо currentValue нужна запись, обеспечивающая доступ к массиву
-внутри объекта. Далее эту функции нужно вложить в цикл for для проверки
-всех объектов на соответвие фильтру внутри массива courses.
-
-В качестве результата нужно вывести не значение (цена) свойства prices
-(вложенный массив), а название товара (значение свойства name).
-
-Какой метод применить для получения доступа к свойству prices?
-Нужно сравнивать только одинаковые сущности. 
-Массив (внутри courses) с диапазоном цен 
-расположен на уровень ниже, чем массив, представляющий фильтр.
-*/
+console.log(searchResult);

@@ -12,7 +12,14 @@ for (let i=0; i<a.length; i++) {
 }
 */
 // Filter method (only even)
+/*
 let b = a.filter(function (currentValue) {
+	return currentValue%2===0
+});
+*/
+
+// With arrow function
+let b = a.filter(currentValue => {
 	return currentValue%2===0
 });
 

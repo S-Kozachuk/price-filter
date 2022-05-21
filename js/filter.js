@@ -1,5 +1,5 @@
 // Sorting array
-let a = [-10,3,-14,0,1,5,-7,9]
+let a = [-10,3,-14,0,1,5,-7,9,28,6,11]
 
 // Classic method
 // Cycle for sorting  

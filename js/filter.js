@@ -1,10 +1,8 @@
 // Sorting array
 let a = [-10,3,-14,0,1,5,-7,9]
 
-
-
-// Cycle for sorting  
 // Classic method
+// Cycle for sorting  
 /*
 // Empty array
 let b =[];

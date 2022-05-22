@@ -14,8 +14,10 @@ let filterTwo = [1000, 5000];
 let filterThree = [3000, null];
 
 
-let b = a.filter((currentValue, elemIndex) => {
+let sortFan = fan.filter((currentValue, elemIndex) => {
 	if (currentValue%2===0) {
 		return elemIndex > 5;
 	}
 });
+
+console.log()

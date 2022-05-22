@@ -12,3 +12,10 @@ fan = [
 let filterOne = [null, 4000];    
 let filterTwo = [1000, 5000];    
 let filterThree = [3000, null];
+
+
+let b = a.filter((currentValue, elemIndex) => {
+	if (currentValue%2===0) {
+		return elemIndex > 5;
+	}
+});

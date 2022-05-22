@@ -30,7 +30,7 @@ let b = a.filter(currentValue => {
 });
 */
 
-// Filtering by two parametrs (currentValue)
+// Filtering by two parameters (currentValue & elemIndex)
 
 let b = a.filter((currentValue, elemIndex) => {
 	if (currentValue%2===0) {

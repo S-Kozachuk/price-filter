@@ -1,10 +1,9 @@
 // Sorting array
 let a = [-10,3,-14,0,1,5,-7,9,28,6,11]
 
-// Classic method
-// Cycle for sorting  
-
+// Classic method (cycle for sorting  )
 // Empty array
+/*
 let b =[];
 
 for (let i=0; i<a.length; i++) {
@@ -14,7 +13,8 @@ for (let i=0; i<a.length; i++) {
 let c = a.filter(function() {
 	return true
 });
-
+console.log(c)
+*/
 
 
 // Filter method (only even)
@@ -30,6 +30,13 @@ let b = a.filter(currentValue => {
 });
 */
 
+// Filtering by two parametrs (currentValue)
+
+let b = a.filter((currentValue, elemIndex) => {
+	if (currentValue%2===0) {
+		return elemIndex > 5;
+	}
+});
+
 console.log(a);
 console.log(b);
-console.log(c)

@@ -23,6 +23,11 @@ console.log(sortFan)
 */
 
 // Iterating fan array with a For in cycle
+let out = document.querySelector('.out');
+console.log(out)
+
 for (let key in fan) {
-	console.log(fan[key])
+	out.innerHTML += fan[key];	
 }
+
+console.log(fan[4])

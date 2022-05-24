@@ -22,5 +22,7 @@ let sortFan = fan.filter((currentValue, elemIndex) => {
 console.log(sortFan)
 */
 
-
-console.log(fan[4])
+// Getting access to a nested array
+fan2 = fan[2];
+fan3 = fan2.prices;
+console.log(fan2.prices)

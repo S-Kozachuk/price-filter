@@ -1,5 +1,5 @@
 // Products
-fan = [
+let fan = [
 	{name: "Rowenta", prices:[0, 3500]},
 	{name: "Philips", prices:[2000, null]},
 	{name: "Braun", prices:[3000, 8000]},
@@ -9,7 +9,7 @@ fan = [
 ];
 
 // Filters
-let filterOne = [null, 4000];    
+let filterOne = [3000, 8000];    
 let filterTwo = [1000, 5000];    
 let filterThree = [3000, null];
 
@@ -23,14 +23,22 @@ console.log(sortFan)
 */
 
 // Getting access to a nested array
-fan2 = fan[2];
-fan3 = fan2.prices;
-fan4 = fan3[0];
+let fan2 = fan[2];
+let fan3 = fan2.prices;
+let fan4 = fan3[0];
+
+// Parent array
+console.log(fan)
+// Object (associative array)
+console.log(fan2)
+// Nested property(nested array = key)
+console.log(fan3)
+// Element from nested array
 console.log(fan4)
 
-if (fan3 === filterOne) {
+if (filterOne===!fan3) {
 	console.log("Success");
 }
 else {
-	console.log("Error")
+	console.log("Error");
 }

@@ -22,12 +22,5 @@ let sortFan = fan.filter((currentValue, elemIndex) => {
 console.log(sortFan)
 */
 
-// Iterating fan array with a For in cycle
-let out = document.querySelector('.out');
-console.log(out)
-
-for (let key in fan) {
-	out.innerHTML += fan[key];	
-}
 
 console.log(fan[4])

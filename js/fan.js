@@ -25,4 +25,12 @@ console.log(sortFan)
 // Getting access to a nested array
 fan2 = fan[2];
 fan3 = fan2.prices;
-console.log(fan2.prices)
+fan4 = fan3[0];
+console.log(fan4)
+
+if (fan3 === filterOne) {
+	console.log("Success");
+}
+else {
+	console.log("Error")
+}

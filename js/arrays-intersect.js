@@ -29,3 +29,5 @@ const intersect = function (nums1, nums2) {
 
 console.log(intersect(input1, input2));
 console.log(intersect(input3, input4));
+
+// Prepapre the 3-rd couple of arrays

@@ -21,9 +21,28 @@ item - значение элемента перебираемого массив
 // index - номер элемента в массиве
 // arr - обрабатываемый массив
 
-
+// Basic syntax
+/*
 let b = a.reduce(function(prev, item, index){
 	return prev + item;
 },0);
+
+console.log(b);
+*/
+
+// Reduce() with arrow function
+/*
+let b = a.reduce((prev,item) => {
+	return prev + index + item;
+});
+
+console.log(b);
+*/
+
+// Reduce() with 3-th arguments
+
+let b = a.reduce((prev,item,index) => {
+	return prev + item + index;
+});
 
 console.log(b);

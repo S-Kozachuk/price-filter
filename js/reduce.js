@@ -55,8 +55,9 @@ let b = a.reduce((prev,item,index) => {
 console.log(b);
 */
 
-// Search the max value from array
-let d = [2,5,33,51,7,8,38,40]
+// Search the max value from array (for)
+/*
+let d = [2,5,33,51,7,8,38,40,92]
 let max = d[0];
 
 for (let i = 0; i < d.length; i++) {
@@ -65,4 +66,18 @@ for (let i = 0; i < d.length; i++) {
 	}
 }
 
+console.log(max);
+*/
+
+// Search the max value from array (reduce)
+
+let d = [2,5,3,51,7,8,38,40,92]
+let max = d.reduce((prev,item) => {
+	if (prev < item) {
+		return item;
+	}
+	else {
+		return prev;
+	}
+});
 console.log(max);

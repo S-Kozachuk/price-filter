@@ -70,7 +70,7 @@ console.log(max);
 */
 
 // Search the max value from array (reduce)
-
+/*
 let d = [2,5,3,51,7,8,38,40,92]
 let max = d.reduce((prev,item) => {
 	if (prev < item) {
@@ -81,3 +81,6 @@ let max = d.reduce((prev,item) => {
 	}
 });
 console.log(max);
+*/
+
+// Finding the index of the largest element (cycle For)

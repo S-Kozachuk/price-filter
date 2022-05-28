@@ -84,3 +84,14 @@ console.log(max);
 */
 
 // Finding the index of the largest element (cycle For)
+let a = [1,2,67,3,4];
+let max = a[0];
+let index = 0;
+for(let i = 0; i < a.length; i++) {
+	if (a[i] > max) {
+		max = a[i];
+		index = i;
+	}
+}
+
+console.log(index)

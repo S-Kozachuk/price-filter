@@ -84,6 +84,7 @@ console.log(max);
 */
 
 // Finding the index of the largest element (cycle For)
+/*
 let a = [1,2,67,3,4];
 let max = a[0];
 let index = 0;
@@ -95,3 +96,19 @@ for(let i = 0; i < a.length; i++) {
 }
 
 console.log(index)
+*/
+
+// Fining the index of the largest element (Reduce)
+/*
+let a = [2,1,67,3,4];
+result = a.reduce((prev,item,index) => {
+	if (item > prev[1]) {
+		return [index, item];
+	}
+	else {
+		return prev;
+	}
+}, [0,a[0]]);
+
+console.log(result);
+*/

@@ -55,7 +55,7 @@ let b = a.reduce((prev,item,index) => {
 console.log(b);
 */
 
-// Search the max value from array (for)
+// #2 Search the max value from array (for)
 /*
 let d = [2,5,33,51,7,8,38,40,92]
 let max = d[0];
@@ -83,7 +83,7 @@ let max = d.reduce((prev,item) => {
 console.log(max);
 */
 
-// Finding the index of element with max value (cycle For)
+// #3 Finding the index of element with max value (for)
 /*
 let a = [1,2,67,109,3,4,85,102];
 let max = a[0];
@@ -115,7 +115,7 @@ result = a.reduce((prev,item,index) => {
 console.log(result);
 */
 
-// Making a one-dimensional array from a multidimensional arrays
+// #4 Making a one-dimensional array from a multidimensional arrays
 const data = [[1,2,3], [3,4,5], [5,6,7]];
 const flat = data.reduce((prev, item) => {
 	return prev.concat(item);

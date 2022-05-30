@@ -1,4 +1,4 @@
-// Cycle for
+// #1 Cycle for
 /*
 let a = [1,2,3,4];
 let sum = 0;
@@ -101,7 +101,7 @@ console.log('Позиция:',index,'Значение:',b)
 */
 
 // Fining the index of element with max value (Reduce)
-
+/*
 let a = [2,1,67,3,4,105,32];
 result = a.reduce((prev,item,index) => {
 	if (item > prev[1]) {
@@ -113,3 +113,11 @@ result = a.reduce((prev,item,index) => {
 }, [0,a[0]]);
 
 console.log(result);
+*/
+
+// Making a one-dimensional array from a multidimensional arrays
+const data = [[1,2,3], [3,4,5], [5,6,7]];
+const flat = data.reduce((prev, item) => {
+	return prev.concat(item);
+})
+console.log(flat);

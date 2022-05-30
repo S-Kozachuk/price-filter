@@ -83,22 +83,24 @@ let max = d.reduce((prev,item) => {
 console.log(max);
 */
 
-// Finding the index of the largest element (cycle For)
-/*
-let a = [1,2,67,3,4];
+// Finding the index of element with max value (cycle For)
+
+let a = [1,2,67,109,3,4,85,102];
 let max = a[0];
 let index = 0;
+let b=0;
 for(let i = 0; i < a.length; i++) {
 	if (a[i] > max) {
 		max = a[i];
 		index = i;
+		b=a[i];
 	}
 }
 
-console.log(index)
-*/
+console.log('Позиция:',index,'Значение:',b)
 
-// Fining the index of the largest element (Reduce)
+
+// Fining the index of element with max value (Reduce)
 /*
 let a = [2,1,67,3,4];
 result = a.reduce((prev,item,index) => {

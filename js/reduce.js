@@ -84,7 +84,7 @@ console.log(max);
 */
 
 // Finding the index of element with max value (cycle For)
-
+/*
 let a = [1,2,67,109,3,4,85,102];
 let max = a[0];
 let index = 0;
@@ -98,11 +98,11 @@ for(let i = 0; i < a.length; i++) {
 }
 
 console.log('Позиция:',index,'Значение:',b)
-
+*/
 
 // Fining the index of element with max value (Reduce)
-/*
-let a = [2,1,67,3,4];
+
+let a = [2,1,67,3,4,105,32];
 result = a.reduce((prev,item,index) => {
 	if (item > prev[1]) {
 		return [index, item];
@@ -113,4 +113,3 @@ result = a.reduce((prev,item,index) => {
 }, [0,a[0]]);
 
 console.log(result);
-*/

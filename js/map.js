@@ -32,13 +32,14 @@ let b = a.map(function(currentValiue, index,array){
 
 // Example
 let a = [3,4,36,5,9];
+
 a[6] = 21;
 let c = a.map(function(item, index,array){
-	//return a[item]*2;	
 	console.log(index);
 	return item*2;
-})
-console.log(c) 
+});
+console.log(a);
+console.log(c);
 
 /*
 Метод map выполнит кол-во итераций сооветсвующеее 

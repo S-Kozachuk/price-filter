@@ -22,7 +22,7 @@ console.log(b);
 // Method map.
 // Map() syntax
 /*
-let b = a.map(function(currentValiue, index, ){
+let b = a.map(function(currentValiue, index,array){
 	return <some function>
 })
 */
@@ -30,4 +30,18 @@ let b = a.map(function(currentValiue, index, ){
 // index- номер элемента  
 // array - массив по которому идёт обход
 
+// Example
+let a = [3,4,36,5,9];
+a[6] = 21;
+let c = a.map(function(item, index,array){
+	//return a[item]*2;	
+	console.log(index);
+	return item*2;
+})
+console.log(c) 
 
+/*
+Метод map выполнит кол-во итераций сооветсвующеее 
+кол-ву элементов в массиве. Даже, если это "дырки",
+например uderfined
+*/

@@ -8,6 +8,7 @@
 */
 
 // Multiplication using a For loop
+/*
 let a = [3,4,36,5,9];
 let b = [];
 for(let i=0;i<a.length;i++) {
@@ -16,3 +17,17 @@ for(let i=0;i<a.length;i++) {
 
 console.log(a);
 console.log(b);
+*/
+
+// Method map.
+// Map() syntax
+/*
+let b = a.map(function(currentValiue, index, ){
+	return <some function>
+})
+*/
+// currentValue - теткущий элемент массива
+// index- номер элемента  
+// array - массив по которому идёт обход
+
+

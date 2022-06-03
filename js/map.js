@@ -64,9 +64,27 @@ console.log(root);
 // Task 2. Add a comma to the end for each element
 let string = ['Paris','Moskow','London','Beijing']
 let commaString = string.map((item)=>{
-	return item + ','
+	return item + '!'
 })
 
 console.log(string);
 console.log(commaString);
 
+// Task 3. Reverse the strings in array to opposite direction
+/*
+Как решить?
+1. Преобразовать каждую строку в массив.Получиться многомрный массив,
+где кадый вложенный массив это строка разбитая на символы(элементы),
+имеющие свой индекс. Соответсвенно по индексу можно обратитьсч каждому
+элементу.
+2. Используя метод map и метод reverse поменять местами порядок букв
+внутри каждого вдложенного массива.
+3. Снова используя map преобразовать вложенные массивы в строки
+4. Занести строки в массив(как элементы, вывести в консоль).
+*/
+let stringFrwd = ['Paris','Moskow','London','Beijing'];
+let stringRevers = stringFrwd.map((item)=>{
+	
+});
+
+console.log(stringRevers);

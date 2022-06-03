@@ -60,3 +60,13 @@ let root = number.map((item)=>{
 })
 console.log(number);
 console.log(root);
+
+// Task 2. Add a comma to the end for each element
+let string = ['Paris','Moskow','London','Beijing']
+let commaString = string.map((item)=>{
+	return item + ','
+})
+
+console.log(string);
+console.log(commaString);
+

@@ -10,19 +10,19 @@
 // Multiplication using a For loop
 /*
 let a = [3,4,36,5,9];
+a[7] = 21;
+delete a[7];
 let b = [];
 for(let i=0;i<a.length;i++) {
 	b[i] = a[i]*2;
 }
-
 console.log(a);
 console.log(b);
 */
-
 // Method map.
 // Map() syntax
 /*
-let b = a.map(function(currentValiue, index,array){
+let b = a.map(function(currentValue,index,array){
 	return <some function>
 })
 */
@@ -32,14 +32,13 @@ let b = a.map(function(currentValiue, index,array){
 
 // Example
 let a = [3,4,36,5,9];
+a[8]=10;
 
-a[6] = 21;
-let c = a.map(function(item, index,array){
-	console.log(index);
-	return item*2;
-});
-console.log(a);
+let c = a.map((item, index,array)=>{
+	return t+item*2;	
+},t=a[3]);
 console.log(c);
+
 
 /*
 Метод map выполнит кол-во итераций сооветсвующеее 

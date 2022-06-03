@@ -85,7 +85,12 @@ console.log(commaString);
 // Solved
 let stringFrwd = ['Paris','Moskow','London','Beijing'];
 let stringRevers = stringFrwd.map((item)=>{
-	return item.split('').reverse().join("")
+	return item.split('').reverse().join('');
+	//step1 = item.split('')
+	// step2 = step1.reverse();
+	// step3 = step2.join('');
+	//return step3 
+	//+ each step to console
 });
 
 console.log(stringRevers);

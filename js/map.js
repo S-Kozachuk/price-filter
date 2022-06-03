@@ -80,11 +80,12 @@ console.log(commaString);
 2. Используя метод map и метод reverse поменять местами порядок букв
 внутри каждого вдложенного массива.
 3. Снова используя map преобразовать вложенные массивы в строки
-4. Занести строки в массив(как элементы, вывести в консоль).
+4. Занести строки в массив(как элементы, вывести в консоль)
 */
+// Solved
 let stringFrwd = ['Paris','Moskow','London','Beijing'];
 let stringRevers = stringFrwd.map((item)=>{
-	
+	return item.split('').reverse().join("")
 });
 
 console.log(stringRevers);

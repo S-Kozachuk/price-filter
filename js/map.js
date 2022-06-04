@@ -92,7 +92,7 @@ let stringFrwd = ['Paris','Moskow','London','Beijing'];
 let stringRevers = stringFrwd.map((item)=>{
 	// In single string
 	// return item.split('').reverse().join('');
-	step1 = item.split('')
+	step1 = item.split('');
 	console.log(step1);
 	step2 = step1.reverse();
 	console.log(step2);
@@ -102,3 +102,7 @@ let stringRevers = stringFrwd.map((item)=>{
 });
 
 console.log(stringRevers);
+
+let newStr = 'html-css-javascript';
+let arr = newStr.split('-');
+console.log(arr);

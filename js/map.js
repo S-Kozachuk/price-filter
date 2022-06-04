@@ -88,6 +88,7 @@ console.log(commaString);
 4. Занести строки в массив(как элементы, вывести в консоль)
 */
 // Solved
+/*
 let stringFrwd = ['Paris','Moskow','London','Beijing'];
 let stringRevers = stringFrwd.map((item)=>{
 	// In single string
@@ -100,9 +101,19 @@ let stringRevers = stringFrwd.map((item)=>{
 	console.log(step3);
 	return step3;
 });
-
 console.log(stringRevers);
-
+*/
+/*
 let newStr = 'html-css-javascript';
 let arr = newStr.split('-');
 console.log(arr);
+*/
+
+//Task 4. Convert simply array to multidimensional array
+let arr = ['123', '456', '789'];
+let multiArr = arr.map((item)=>{
+	return item.split('');
+});
+arr = multiArr;
+console.log(arr);
+

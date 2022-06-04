@@ -46,22 +46,26 @@ console.log(c);
 кол-ву элементов в массиве. Даже, если это "дырки",
 например uderfined
 */
-
+/*
 let arr = [1,2,3,4,5];
 let result = arr.map(function(elem,i){
 	return elem*elem
 });
 console.log(result)
+*/
 
 // Task 1. Get a square root from number
+/*
 let number = [1,3,9,25,49,16,64];
 let root = number.map((item)=>{
 	return Math.sqrt(item);
 })
 console.log(number);
 console.log(root);
+*/
 
 // Task 2. Add a comma to the end for each element
+/*
 let string = ['Paris','Moskow','London','Beijing']
 let commaString = string.map((item)=>{
 	return item + '!'
@@ -69,6 +73,7 @@ let commaString = string.map((item)=>{
 
 console.log(string);
 console.log(commaString);
+*/
 
 // Task 3. Reverse the strings in array to opposite direction
 /*

@@ -117,3 +117,10 @@ let multiArr = arr.map((item)=>{
 arr = multiArr;
 console.log(arr);
 
+testArray = [
+	[1,2,3],
+	[4,5,6],
+	[7,8,9]
+]
+console.log(testArray);
+// Who get type of elements in arr array

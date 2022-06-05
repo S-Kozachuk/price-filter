@@ -117,7 +117,9 @@ let multiArr = arr.map((item)=>{
 arr = multiArr;
 console.log(arr);
 
-testArray = [
+// How use a parseInt function?
+
+let testArray = [
 	[1,2,3],
 	[4,5,6],
 	[7,8,9]

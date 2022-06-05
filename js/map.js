@@ -113,8 +113,13 @@ console.log(arr);
 let arr = ['123', '456', '789'];
 let multiArr = arr.map((item)=>{
 	return item.split('');
-});
-arr = multiArr;
+	});
+
+function parser(q) {
+	return parseInt(q)
+};
+
+console.log(multiArr);
 console.log(arr);
 
 // How use a parseInt function?

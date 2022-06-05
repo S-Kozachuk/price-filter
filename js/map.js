@@ -118,6 +118,7 @@ arr = multiArr;
 console.log(arr);
 
 // How use a parseInt function?
+// https://metanit.com/web/javascript/2.4.php
 
 let testArray = [
 	[1,2,3],

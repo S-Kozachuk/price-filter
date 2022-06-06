@@ -28,29 +28,22 @@ let fan3 = fan2.prices;
 let fan4 = fan3[0];
 
 // Parent array
-console.log(fan)
+//console.log(fan)
 // Object (associative array)
-console.log(fan2)
+//console.log(fan2)
 // Nested property(nested array = key)
-console.log(fan3)
+// console.log(fan3)
 // Element from nested array
-console.log(fan4)
+// console.log(fan4)
 
-if (filterOne===!fan3) {
-	console.log("Success");
+result = fan.map((item,index)=>{
+	fan2=fan[index];
+	fan3=fan2.prices
+	return fan3;
+});
+if (fan3[1]===filterOne) {
+	console.log ('yes');
 }
-else {
-	console.log("Error");
-}
-
-// Next step. Перебрать значения массива fan c помощь вложенных
-// циклов по индексу [i]. 
-// Результат записать в новый массив (с вложеннымыми массивами внуттри).
-
-
-for(let i=0;i<fan;i++){
-	let fanX = fan[i];
-	let fanV = fanX.prices;
-	console.log(fanV);
-}
-
+console.log(fan3[1])
+console.log ('no');
+console.log(result);

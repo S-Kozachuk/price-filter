@@ -23,10 +23,11 @@ console.log(sortFan)
 */
 
 // Getting access to a nested array
+/*
 let fan2 = fan[2];
 let fan3 = fan2.prices;
 let fan4 = fan3[0];
-
+*/
 // Parent array
 //console.log(fan)
 // Object (associative array)
@@ -41,17 +42,34 @@ let fan4 = fan3[0];
 newFan = fan[0].prices[1];
 console.log(newFan)
 */
+// Как прербрать массив и получить просто значенич цен в виде нового массива?
 /*
-result = fan.map((item,index)=>{
-	if()
+let result = fan.map((item,index)=>{
+	return fan[index].prices[index];
 });
 */
+
+let result = fan.map((item,index)=>{
+	obj = fan[index];
+	obj.map(item,prices=>{
+		return prices[index];
+	});
+});
+
+/*
+let multiArr = arr.map((item)=>{
+	i = item.split('');
+	return i.map((num)=>{
+		return parseInt(num);
+	});
+});
+*/
+
+
 /*
 if (fan3[]===filterOne) {
 	console.log ('yes');
 }
 */
-/*
-console.log(fan3[1])
+// console.log(fan3[1])
 console.log(result);
-*/

@@ -138,3 +138,8 @@ let multiArr = arr.map((item)=>{
 
 // Task 5. Record in each element of the array the value of this 
 //element, multiplied by order number in the array.
+let arr = [4,8,92,3,0,7,3,11];
+let answer = arr.map((item,index)=>{
+	return item*index
+});
+console.log(answer)

@@ -110,43 +110,28 @@ console.log(arr);
 */
 
 //Task 4. Convert simply array to multidimensional array
-let arr = ['123', '456', '789'];
+// Initial array
+//let arr = ['123', '456', '789'];
 // The 1-st solved method
+/*
 let multiArr = arr.map((item)=>{
 	return item.split('');
 });
-
 let parseNumber = multiArr.map((item)=>{
 	return item.map((num)=>{
 		return parseInt(num);
 	}) 
 });
-
-// The 2
-
+*/
+// The 2-nd solved method
 /*
 let multiArr = arr.map((item)=>{
-	return item.map(function(num){
+	i = item.split('');
+	return i.map((num)=>{
 		return parseInt(num);
 	});
 });
-
-arr = numberArr;
 */
-console.log(arr);
-console.log(multiArr);
-console.log(parseNumber);
-
-// How use a parseInt function?
-// https://metanit.com/web/javascript/2.4.php
-
-// Standard multidemisional array
-/*
-let testArray = [
-	[1,2,3],
-	[4,5,6],
-	[7,8,9]
-]
-console.log(testArray);
-*/
-// Who get type of elements in arr array
+// console.log(arr);
+// console.log(multiArr);
+// console.log(parseNumber);

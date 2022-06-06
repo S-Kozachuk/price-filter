@@ -109,7 +109,7 @@ let arr = newStr.split('-');
 console.log(arr);
 */
 
-//Task 4. Convert simply array to multidimensional array
+// Task 4. Convert simply array to multidimensional array
 // Initial array
 //let arr = ['123', '456', '789'];
 // The 1-st solved method
@@ -135,3 +135,6 @@ let multiArr = arr.map((item)=>{
 // console.log(arr);
 // console.log(multiArr);
 // console.log(parseNumber);
+
+// Task 5. Record in each element of the array the value of this 
+//element, multiplied by order number in the array.

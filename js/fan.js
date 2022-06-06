@@ -36,14 +36,22 @@ let fan4 = fan3[0];
 // Element from nested array
 // console.log(fan4)
 
+// ! Syntax to access to element of prices array
+/*
+newFan = fan[0].prices[1];
+console.log(newFan)
+*/
+/*
 result = fan.map((item,index)=>{
-	fan2=fan[index];
-	fan3=fan2.prices
-	return fan3;
+	if()
 });
-if (fan3[1]===filterOne) {
+*/
+/*
+if (fan3[]===filterOne) {
 	console.log ('yes');
 }
+*/
+/*
 console.log(fan3[1])
-console.log ('no');
 console.log(result);
+*/

@@ -1,4 +1,4 @@
-// What is the map method used for?
+// What is the map method used for? By Alex Lyshenko
 /*
 Метод map используется для обхода массива(перебрать массив)
 с одновременным выполнением каких-либо действий

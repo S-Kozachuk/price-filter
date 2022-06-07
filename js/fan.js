@@ -9,7 +9,7 @@ let fan = [
 ];
 
 // Filters
-let filterOne = [3000, 8000];    
+let filterOne = [0, 3500];    
 let filterTwo = [1000, 5000];    
 let filterThree = [3000, null];
 
@@ -39,23 +39,36 @@ let fan4 = fan3[0];
 
 // ! Syntax to access to element of prices array
 /*
-newFan = fan[0].prices[1];
+newFan = fan[0].prices;
 console.log(newFan)
 */
-// Как прербрать массив и получить просто значения цен в виде нового массива?
+// Как перебрать массив и получить только значения цен в виде нового массива?
+/*
+let result = fan.map(item=>{
+	return item.prices;
+});
+console.log(result);
+if (newFan == filterOne){
+	console.log('Yes');
+}
+else {
+console.log('None');
+}
+*/
 
-let resX = [];
-let result = fan.map((item,index)=>{
-	return fan[index].prices;
+const people = [
+	{ name: 'Сергей', age: 31, budget: 40000 },
+	{ name: 'Елена', age: 17, budget: 3400 },
+	{ name: 'Игорь', age: 38, budget: 50000 },
+	{ name: 'Михаил', age: 19, budget: 1900 },
+	{ name: 'Александра', age: 22, budget: 48000 },
+	{ name: 'Виктория', age: 28, budget: 1800 }
+]
+
+const newPeople = people.map(person=> {
+	return person.name
 });
 
-let newResult =[];
-
-newResult = result.reduce((acc,item,index)=>{
-	
-}, []);
+console.log(newPeople)
 
 
-
-console.log(result);
-console.log(newResult);

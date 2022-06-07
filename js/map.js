@@ -111,7 +111,7 @@ console.log(arr);
 
 // Task 4. Convert simply array to multidimensional array
 // Initial array
-let arr = ['123', '456', '789'];
+// let arr = ['123', '456', '789'];
 // The 1-st solved method
 /*
 let multiArr = arr.map((item)=>{
@@ -124,16 +124,16 @@ let parseNumber = multiArr.map((item)=>{
 });
 */
 // The 2-nd solved method
-
+/*
 let multiArr = arr.map(item=>{
 	let i = item.split('');
 	return i.map(num=>{
 		return parseInt(num);
 	});
 });
-
+*/
 // console.log(arr);
- console.log(multiArr);
+// console.log(multiArr);
 // console.log(parseNumber);
 
 // Task 5. Record in each element of the array the value of this 

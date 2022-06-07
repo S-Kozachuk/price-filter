@@ -154,6 +154,19 @@ let arr=[4,8,92,3,0,7,3,12].map((item,index)=>{
 console.log(arr);
 */
 
+// Array's method map by Alex Lushchenko
+// https://youtu.be/Ba-ss43Iz2M
+
+let a = [33,44,55];
+let b = a.map((item,index,array) => {
+	if (index == 2) {
+		array[index + 1] = 66;
+	}
+	return item;
+});
+console.log(a);
+console.log(b);
+
 // Example by Vladilen Minin
 // https://youtu.be/nEabP9CYCAQ (5:30)
 
@@ -172,4 +185,4 @@ const newPeople = people.map((person)=> {
 	return person.age*2
 });
 
-console.log(newPeople)
+//console.log(newPeople)

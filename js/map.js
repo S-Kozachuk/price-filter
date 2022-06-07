@@ -153,3 +153,23 @@ let arr=[4,8,92,3,0,7,3,12].map((item,index)=>{
 
 console.log(arr);
 */
+
+// Example by Vladilen Minin
+// https://youtu.be/nEabP9CYCAQ (5:30)
+
+const people = [
+	{ name: 'Сергей', age: 31, budget: 40000 },
+	{ name: 'Елена', age: 17, budget: 3400 },
+	{ name: 'Игорь', age: 38, budget: 50000 },
+	{ name: 'Михаил', age: 19, budget: 1900 },
+	{ name: 'Александра', age: 22, budget: 48000 },
+	{ name: 'Виктория', age: 28, budget: 1800 }
+]
+
+const newPeople = people.map((person)=> {
+	// return person.name
+	// return `${person.name} (${person.age});`
+	return person.age*2
+});
+
+console.log(newPeople)

@@ -42,34 +42,20 @@ let fan4 = fan3[0];
 newFan = fan[0].prices[1];
 console.log(newFan)
 */
-// Как прербрать массив и получить просто значенич цен в виде нового массива?
-/*
+// Как прербрать массив и получить просто значения цен в виде нового массива?
+
+let resX = [];
 let result = fan.map((item,index)=>{
-	return fan[index].prices[index];
-});
-*/
-
-let result = fan.map((item,index)=>{
-	obj = fan[index];
-	obj.map(item,prices=>{
-		return prices[index];
-	});
+	return fan[index].prices;
 });
 
-/*
-let multiArr = arr.map((item)=>{
-	i = item.split('');
-	return i.map((num)=>{
-		return parseInt(num);
-	});
-});
-*/
+let newResult =[];
+
+newResult = result.reduce((acc,item,index)=>{
+	
+}, []);
 
 
-/*
-if (fan3[]===filterOne) {
-	console.log ('yes');
-}
-*/
-// console.log(fan3[1])
+
 console.log(result);
+console.log(newResult);

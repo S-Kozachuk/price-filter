@@ -1,6 +1,6 @@
 // Products
 let fan = [
-	{name: "Rowenta", prices:[0, 3500]},
+	{name: "Rowenta", prices:[0, 3000]},
 	{name: "Philips", prices:[2000, null]},
 	{name: "Braun", prices:[3000, 8000]},
 	{name: "Scarlett", prices:[null, 2000]},
@@ -43,13 +43,15 @@ newFan = fan[1].prices[0]; // Object Philips(min price)
 console.log(newFan)
 */
 
-// Как перебрать массив и получить только значения цен в виде нового массива?
-/*
-let result = fan.map(item=>{
-	return `${item.prices}`;
+a = filterOne;
+let result = [];
+result = fan.map((item,index) => {
+	if (a[index] != null) {
+		if (a[index] >= fan[index].prices[index]) {
+			return fan[index].prices;
+		}
+		return;
+	}
 });
 console.log(result);
-*/
-
-
 

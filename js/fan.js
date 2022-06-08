@@ -2,7 +2,7 @@
 let fan = [
 	{name: "Rowenta", prices:[0, 3000]},
 	{name: "Philips", prices:[2000, null]},
-	{name: "Braun", prices:[3000, 8000]},
+	{name: "Braun", prices:[3000, 8000.]},
 	{name: "Scarlett", prices:[null, 2000]},
 	{name: "Bork", prices:[4500, 12000]},
 	{name: "Dyson", prices:[8000, 45000]},
@@ -42,16 +42,27 @@ let fan4 = fan3[0];
 newFan = fan[1].prices[0]; // Object Philips(min price)
 console.log(newFan)
 */
-
-a = filterOne;
-let result = [];
-result = fan.map((item,index) => {
-	if (a[index] != null) {
-		if (a[index] >= fan[index].prices[index]) {
-			return fan[index].prices;
+/*
+let a = filterOne[0]; // Min filter value 
+let b = filterOne[1]; // Max filter value
+let result = fan.map((item,index) => {
+	if (a != null && b != null) {
+		if (a >= fan[item].prices[item]) {
+			return fan[item];
 		}
 		return;
 	}
 });
 console.log(result);
+*/
+let result = [];
+let result2=[];
+for (let i =0; i<fan.length; i++) {
+	result = fan[i].prices;
+	for (let i =0; i<result.length; i++){
+		result2 = result.prices[i];
+	}
+	console.log(result2);
+}
+
 

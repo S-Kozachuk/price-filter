@@ -57,13 +57,14 @@ console.log(result);
 */
 let result = [];
 let result2 = [];
+let result3 = [];
 for (let i = 0; i<fan.length; i++) {
 	result = fan[i].prices;
 	//console.log(result);
 	for (let a = 0; a<result.length; a++) {
 		result2=result[a];
 		console.log(result2);
-	}
+		result3.push(result2);
+	}	
 }
-
-
+console.log(result3);

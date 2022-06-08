@@ -56,13 +56,14 @@ let result = fan.map((item,index) => {
 console.log(result);
 */
 let result = [];
-let result2=[];
-for (let i =0; i<fan.length; i++) {
+let result2 = [];
+for (let i = 0; i<fan.length; i++) {
 	result = fan[i].prices;
-	for (let i =0; i<result.length; i++){
-		result2 = result.prices[i];
+	//console.log(result);
+	for (let a = 0; a<result.length; a++) {
+		result2=result[a];
+		console.log(result2);
 	}
-	console.log(result2);
 }
 
 

@@ -39,7 +39,7 @@ let fan4 = fan3[0];
 
 // ! Syntax to access to element of prices array
 /*
-newFan = fan[0].prices;
+newFan = fan[1].prices[0]; // Object Philips(min price)
 console.log(newFan)
 */
 
@@ -50,7 +50,6 @@ let result = fan.map(item=>{
 });
 console.log(result);
 */
-
 
 
 

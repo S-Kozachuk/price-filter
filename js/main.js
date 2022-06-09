@@ -1,4 +1,4 @@
-// Список курсов
+// Courses list
 let courses = [
 	{ name: "Courses in England", prices: [0, 100] }, 
 	{ name: "Courses in Germany", prices: [500, null] }, 
@@ -10,7 +10,7 @@ let courses = [
 	{ name: "Courses in France", prices: [null, null] },
 ];
 
-// Варианты цен (фильтры), которые ищет пользователь
+// Prices variant(filters), custom search
 let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];

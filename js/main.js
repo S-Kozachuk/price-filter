@@ -20,25 +20,25 @@ function coursesFilter (filter){
 	let a = filter[0], // Min filter value 
 		b = filter[1]; // Max filter value
 	
-	 for(let i=0; i<fan.length; i++) {
-		let minPrice = fan[i].prices[0],
-			maxPrice = fan[i].prices[1];
+	 for(let i=0; i<courses.length; i++) {
+		let minPrice = courses[i].prices[0],
+			maxPrice = courses[i].prices[1];
 		
 		if (a != null) {
 			if(minPrice != null && minPrice >= a) {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						console.log(fan[i].name)
+						console.log(courses[i].name)
 					}
 				}
 				else {
-					console.log(fan[i].name)
+					console.log(courses[i].name)
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						console.log(fan[i].name)
+						console.log(courses[i].name)
 					}
 				}
 			}
@@ -46,17 +46,16 @@ function coursesFilter (filter){
 		else {
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
-					console.log(fan[i].name)
+					console.log(courses[i].name)
 				}
 			}
 		}
 	 }
-	
 };
 	
 
-//(initial(coursesFilter));
-//(initial(coursesFilter));
-(initial(coursesFilter));
+// (coursesFilter(requiredRange1));
+// (coursesFilter(requiredRange2));
+// (coursesFilter(requiredRange3));
 
  

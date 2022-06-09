@@ -2,7 +2,7 @@
 let fan = [
 	{name: "Rowenta", prices:[0, 3000]},
 	{name: "Philips", prices:[2000, null]},
-	{name: "Braun", prices:[3000, 8000.]},
+	{name: "Braun", prices:[3000, 8000]},
 	{name: "Scarlett", prices:[null, 2000]},
 	{name: "Bork", prices:[4500, 12000]},
 	{name: "Dyson", prices:[8000, 45000]},
@@ -134,4 +134,6 @@ function initial (filter){
 };
 	
 
-console.log(initial(filterOne));
+//(initial(filterOne));
+//(initial(filterTwo));
+(initial(filterThree));

@@ -10,31 +10,52 @@ let courses = [
 	{ name: "Courses in France", prices: [null, null] },
 ];
 
-// Получение значения name
-console.log(courses[3].name);
-
-// Вывод значений вложенного массива (доступ к ценам)
-console.log(courses[6].prices)
-
 // Варианты цен (фильтры), которые ищет пользователь
 let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
+function initial (filter){
+	let a = filter[0], // Min filter value 
+		b = filter[1]; // Max filter value
+	
+	 for(let i=0; i<fan.length; i++) {
+		let minPrice = fan[i].prices[0],
+			maxPrice = fan[i].prices[1];
+		
+		if (a != null) {
+			if(minPrice != null && minPrice >= a) {
+				if(b != null) {
+					if(maxPrice != null && maxPrice <= b){
+						console.log(fan[i].name)
+					}
+				}
+				else {
+					console.log(fan[i].name)
+				}
+			}
+			else {
+				if(b != null) {
+					if(maxPrice != null && maxPrice <= b){
+						console.log(fan[i].name)
+					}
+				}
+			}
+		}
+		else {
+			if(b != null) {
+				if(maxPrice != null && maxPrice <= b){
+					console.log(fan[i].name)
+				}
+			}
+		}
+	 }
+	
+};
+	
 
-// First variant (not work)
-/*
-for (let i = 0; i <= courses; i++) {
-	if (requiredRange1 == courses[i].prices){
-		searchResult = courses[i].prices
-	}
-}
-console.log(searchResult);
-*/
-
-// Second variant
-for (let value of courses.values()) {
-	console.log(value);
-}
+//(initial(filterOne));
+//(initial(filterTwo));
+(initial(filterThree));
 
  

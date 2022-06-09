@@ -63,7 +63,7 @@ function coursesFilter (filter){
 
 
 	
-
+	
 // console.log(coursesFilter(requiredRange1));
 console.log(coursesFilter(requiredRange2));
 // console.log(coursesFilter(requiredRange3));

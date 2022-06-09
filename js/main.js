@@ -58,12 +58,8 @@ function coursesFilter (filter){
 		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
 	 });
 	 return resultArray
-
 };
 
-
-	
-	
 // console.log(coursesFilter(requiredRange1));
 console.log(coursesFilter(requiredRange2));
 // console.log(coursesFilter(requiredRange3));

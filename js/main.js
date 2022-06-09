@@ -19,8 +19,8 @@ let requiredRange3 = [200, null];
 function coursesFilter (filter){
 	let a = filter[0], // Min filter value 
 		b = filter[1]; // Max filter value
-	
-	 for(let i=0; i<courses.length; i++) {
+
+	for(let i=0; i<courses.length; i++) {
 		let minPrice = courses[i].prices[0],
 			maxPrice = courses[i].prices[1];
 		
@@ -28,17 +28,17 @@ function coursesFilter (filter){
 			if(minPrice != null && minPrice >= a) {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						console.log(courses[i].name)
+						console.log(courses[i].name);
 					}
 				}
 				else {
-					console.log(courses[i].name)
+					console.log(courses[i].name);
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						console.log(courses[i].name)
+						console.log(courses[i].name);
 					}
 				}
 			}
@@ -46,7 +46,7 @@ function coursesFilter (filter){
 		else {
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
-					console.log(courses[i].name)
+					console.log(courses[i].name);
 				}
 			}
 		}
@@ -56,6 +56,6 @@ function coursesFilter (filter){
 
 // (coursesFilter(requiredRange1));
 // (coursesFilter(requiredRange2));
-// (coursesFilter(requiredRange3));
+(coursesFilter(requiredRange3));
 
  

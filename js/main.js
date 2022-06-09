@@ -52,12 +52,20 @@ function coursesFilter (filter){
 			}
 		}
 	 }
-	 return resultArray;
+	 
+	 document.querySelector('.result').innerHTML= '';
+	 resultArray.forEach(i =>{
+		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+	 });
+	 return resultArray
+
 };
+
+
 	
 
-console.log(coursesFilter(requiredRange1));
-// console.log(coursesFilter(requiredRange2));
+// console.log(coursesFilter(requiredRange1));
+console.log(coursesFilter(requiredRange2));
 // console.log(coursesFilter(requiredRange3));
 
  

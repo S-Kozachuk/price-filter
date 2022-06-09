@@ -15,7 +15,8 @@ let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
-function initial (filter){
+// Filter function
+function coursesFilter (filter){
 	let a = filter[0], // Min filter value 
 		b = filter[1]; // Max filter value
 	
@@ -54,8 +55,8 @@ function initial (filter){
 };
 	
 
-//(initial(filterOne));
-//(initial(filterTwo));
-(initial(filterThree));
+//(initial(coursesFilter));
+//(initial(coursesFilter));
+(initial(coursesFilter));
 
  

@@ -88,3 +88,50 @@ for(let i=0; i<fan.length; i++) {
 };
 console.log(result);
 */
+
+
+// Iterating the 1-st filter (2-nd variant)
+let result = [];
+let fanPrice = [];
+
+
+function initial (filter){
+	let a = filter[0], // Min filter value 
+		b = filter[1]; // Max filter value
+	
+	 for(let i=0; i<fan.length; i++) {
+		let minPrice = fan[i].prices[0],
+			maxPrice = fan[i].prices[1];
+		
+		if (a != null) {
+			if(minPrice != null && minPrice >= a) {
+				if(b != null) {
+					if(maxPrice != null && maxPrice <= b){
+						console.log(fan[i].name)
+					}
+				}
+				else {
+					console.log(fan[i].name)
+				}
+			}
+			else {
+				if(b != null) {
+					if(maxPrice != null && maxPrice <= b){
+						console.log(fan[i].name)
+					}
+				}
+			}
+		}
+		else {
+			if(b != null) {
+				if(maxPrice != null && maxPrice <= b){
+					console.log(fan[i].name)
+				}
+			}
+		}
+	 }
+	
+};
+	
+
+console.log(initial(filterOne));

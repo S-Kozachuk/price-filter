@@ -55,12 +55,13 @@ let result = fan.map((item,index) => {
 });
 console.log(result);
 */
+
+/*
 let result = [];
 let result2 = [];
 let result3 = [];
 for (let i = 0; i<fan.length; i++) {
 	result = fan[i].prices;
-	//console.log(result);
 	for (let a = 0; a<result.length; a++) {
 		result2=result[a];
 		console.log(result2);
@@ -68,3 +69,22 @@ for (let i = 0; i<fan.length; i++) {
 	}	
 }
 console.log(result3);
+*/
+
+// Iterating the 1-st filter (1-st variant)
+/*
+let result = [];
+let fanPrice = [];
+let a = filterOne[0]; // Min filter value 
+let b = filterOne[1]; // Max filter value
+for(let i=0; i<fan.length; i++) {
+	fanPrice = fan[i].prices;
+	// console.log(fanPrice)
+		if (a != null && fanPrice[0] >= a){
+			if (b != null && fanPrice[1] <= b){
+			result.push(fanPrice[1]);		
+		}
+	}
+};
+console.log(result);
+*/

@@ -9,12 +9,12 @@ h1,h2,h3,h4 {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #0969da;
 	transition: .5s;
 }
 
 a:hover {
-	color: blue;
+	text-decoration: underline;
 }
 
 button{

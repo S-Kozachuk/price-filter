@@ -15,10 +15,15 @@ let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
+// Filter function
+const filterOne = document.querySelector('.filter-one');
+const filterTwo = document.querySelector('.filter-two');
+const filterThree = document.querySelector('.filter-three');
+const output = document.querySelector('.result')
 let resultArray = [];
 
-// Filter function
 function coursesFilter (filter){
+	resultArray = [];
 	
 		a = filter[0], // Min filter value 
 		b = filter[1]; // Max filter value
@@ -54,31 +59,26 @@ function coursesFilter (filter){
 			}
 		}
 	}
-	return resultArray
 };
 
-// console.log(coursesFilter(requiredRange1));
-// console.log(coursesFilter(requiredRange2));
-// console.log(coursesFilter(requiredRange3));
-
-const filterOne = document.querySelector('.filter-one');
-const filterTwo = document.querySelector('.filter-two');
-const filterThree = document.querySelector('.filter-three');
 
 filterOne.addEventListener('click',()=>{
-		coursesFilter(requiredRange1);
-		document.querySelector('.result').innerHTML= '';
-		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+	output.innerHTML= '';
+	coursesFilter(requiredRange1);
+	output.innerHTML=`<h4>До 200 рублей</h4><h2>${resultArray}</h2>`;
+	console.log(resultArray);
 });
 
 filterTwo.addEventListener('click',()=>{
+	output.innerHTML= '';
 	coursesFilter(requiredRange2);
-	document.querySelector('.result').innerHTML= '';
-	document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+	output.innerHTML=`<h4>От 100 до 350 рублей</h4><h2>${resultArray}</h2>`;
+	console.log(resultArray);
 });
 
 filterThree.addEventListener('click',()=>{
 	coursesFilter(requiredRange3);
-	document.querySelector('.result').innerHTML= '';
-	document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+	output.innerHTML= '';
+	output.innerHTML=`<h4>От 200 рублей</h4><h2>${resultArray}</h2>`;
+	console.log(resultArray);
 });

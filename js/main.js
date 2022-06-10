@@ -24,9 +24,8 @@ let resultArray = [];
 
 function coursesFilter (filter){
 	resultArray = [];
-	
-		a = filter[0], // Min filter value 
-		b = filter[1]; // Max filter value
+	a = filter[0], // Min filter value 
+	b = filter[1]; // Max filter value
 
 	for(let i=0; i<courses.length; i++) {
 		let minPrice = courses[i].prices[0],
@@ -68,17 +67,17 @@ function coursesOutput (FilterValue) {
 		});
 		console.log(resultArray);
 }
-
+// Button 1
 filterOne.addEventListener('click',()=>{
 	output.innerHTML=`<h4>До 200 рублей</h4>`;
 	coursesOutput(requiredRange1);
 });
-
+// Button 2
 filterTwo.addEventListener('click',()=>{
 	output.innerHTML=`<h4>От 100 до 350 рублей</h4>`;
 	coursesOutput(requiredRange2);
 });
-
+// Button 3
 filterThree.addEventListener('click',()=>{
 	output.innerHTML=`<h4>От 200 рублей</h4>`;
 	coursesOutput(requiredRange3);

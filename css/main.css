@@ -7,6 +7,22 @@ h1,h2,h3,h4 {
 	font-weight: 400;
 }
 
+a {
+	text-decoration: none;;
+	color: black;
+	transition: .5s;
+}
+
+a:hover {
+	color: blue;
+}
+
 button{
 	cursor: pointer;
+}
+
+.repo {
+	margin-top: 20px;
+	font-size: 12px;
+
 }

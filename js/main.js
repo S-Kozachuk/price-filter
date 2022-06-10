@@ -63,22 +63,31 @@ function coursesFilter (filter){
 
 
 filterOne.addEventListener('click',()=>{
-	output.innerHTML= '';
 	coursesFilter(requiredRange1);
-	output.innerHTML=`<h4>До 200 рублей</h4><h2>${resultArray}</h2>`;
+	output.innerHTML=`<h4>До 200 рублей</h4>`;
+	// for(let i=0;i<resultArray.length;i++){
+	// 	output.innerHTML+=`<h2>${resultArray[i]}</h2>`	
+	// };
+	resultArray.forEach((item, index) => {
+		output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
+	});
 	console.log(resultArray);
 });
 
 filterTwo.addEventListener('click',()=>{
-	output.innerHTML= '';
 	coursesFilter(requiredRange2);
-	output.innerHTML=`<h4>От 100 до 350 рублей</h4><h2>${resultArray}</h2>`;
+	output.innerHTML=`<h4>От 100 до 350 рублей</h4>`;
+	resultArray.forEach((item,index) => {
+		output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
+	});
 	console.log(resultArray);
 });
 
 filterThree.addEventListener('click',()=>{
 	coursesFilter(requiredRange3);
-	output.innerHTML= '';
-	output.innerHTML=`<h4>От 200 рублей</h4><h2>${resultArray}</h2>`;
+	output.innerHTML=`<h4>От 200 рублей</h4>`;
+	resultArray.forEach((item,index) => {
+		output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
+	});
 	console.log(resultArray);
 });

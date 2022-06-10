@@ -15,9 +15,11 @@ let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
+let resultArray = [];
+
 // Filter function
 function coursesFilter (filter){
-	let resultArray = [],
+	
 		a = filter[0], // Min filter value 
 		b = filter[1]; // Max filter value
 
@@ -51,17 +53,18 @@ function coursesFilter (filter){
 				}
 			}
 		}
-	 }
-	 
-	 document.querySelector('.result').innerHTML= '';
-	 resultArray.forEach(i =>{
-		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
-	 });
-	 return resultArray
+	}
+	return resultArray
 };
 
 // console.log(coursesFilter(requiredRange1));
-console.log(coursesFilter(requiredRange2));
+// console.log(coursesFilter(requiredRange2));
 // console.log(coursesFilter(requiredRange3));
 
- 
+const filterOne = document.querySelector('.filter-one')
+
+filterOne.addEventListener('click',()=>{
+		coursesFilter(requiredRange1);
+		document.querySelector('.result').innerHTML= '';
+		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+});

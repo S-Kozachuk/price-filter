@@ -61,10 +61,24 @@ function coursesFilter (filter){
 // console.log(coursesFilter(requiredRange2));
 // console.log(coursesFilter(requiredRange3));
 
-const filterOne = document.querySelector('.filter-one')
+const filterOne = document.querySelector('.filter-one');
+const filterTwo = document.querySelector('.filter-two');
+const filterThree = document.querySelector('.filter-three');
 
 filterOne.addEventListener('click',()=>{
 		coursesFilter(requiredRange1);
 		document.querySelector('.result').innerHTML= '';
 		document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+});
+
+filterTwo.addEventListener('click',()=>{
+	coursesFilter(requiredRange2);
+	document.querySelector('.result').innerHTML= '';
+	document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
+});
+
+filterThree.addEventListener('click',()=>{
+	coursesFilter(requiredRange3);
+	document.querySelector('.result').innerHTML= '';
+	document.querySelector('.result').innerHTML+=`<h2>${resultArray}</h2>`;
 });

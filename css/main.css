@@ -8,7 +8,7 @@ h1,h2,h3,h4 {
 }
 
 a {
-	text-decoration: none;;
+	text-decoration: none;
 	color: black;
 	transition: .5s;
 }
@@ -24,5 +24,8 @@ button{
 .repo {
 	margin-top: 20px;
 	font-size: 12px;
+}
 
+.copyright {
+	margin-top: 10px;
 }

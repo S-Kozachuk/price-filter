@@ -37,16 +37,22 @@ function coursesFilter (filter){
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
 						resultArray.push(courses[i].name);
+						sortArray.push(courses[i].prices[0]);
+						sortArray.push(courses[i].prices[1]);
 					}
 				}
 				else {
 					resultArray.push(courses[i].name);
+					sortArray.push(courses[i].prices[0]);
+					sortArray.push(courses[i].prices[1]);
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
 						resultArray.push(courses[i].name);
+						sortArray.push(courses[i].prices[0]);
+						sortArray.push(courses[i].prices[1]);
 					}
 				}
 			}
@@ -55,6 +61,8 @@ function coursesFilter (filter){
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
 					resultArray.push(courses[i].name);
+					sortArray.push(courses[i].prices[0]);
+					sortArray.push(courses[i].prices[1]);
 				}
 			}
 		}

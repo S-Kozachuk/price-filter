@@ -21,6 +21,7 @@ const filterTwo = document.querySelector('.filter-two');
 const filterThree = document.querySelector('.filter-three');
 const output = document.querySelector('.result')
 let resultArray = [];
+let sortArray = [];
 
 function coursesFilter (filter){
 	resultArray = [];

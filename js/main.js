@@ -97,15 +97,3 @@ filterThree.addEventListener('click',()=>{
 	output.innerHTML=`<h4>От 200 рублей</h4>`;
 	coursesOutput(requiredRange3);
 });
-
-function coursesSort(){
-	for(let i=0; i<courses.length; i++) {
-		let x = courses[i].prices[0];
-		//console.log(x)
-		let y = courses[i+1].prices[0];
-		if (x < y) {
-			resultArray.push(courses[i].name);
-		}
-	}
-}
-console.log(coursesSort());

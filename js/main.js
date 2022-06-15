@@ -74,9 +74,22 @@ function coursesOutput (FilterValue) {
 		resultArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
+		console.log(sortArray);	
+		sortArray.sort((a, b) => a - b);
 		console.log(resultArray);
 		console.log(sortArray);
 }
+
+/*
+let x = resultArr[i].pices[0];
+let y = resultArr[i+1].pices[0]; 
+function coursesSort(){
+	if(x < y){
+		resultArray.push(courses[i].name) 
+	}
+}
+*/
+
 // Button 1
 filterOne.addEventListener('click',()=>{
 	output.innerHTML=`<h4>До 200 рублей</h4>`;

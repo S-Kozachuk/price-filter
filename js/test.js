@@ -34,12 +34,22 @@ console.log(coursesSort());
 */
 
 // 2-nd variant
+
 function coursesSort(){
-	for(let i=0; i<courses.length; i++) {
-		if(courses[i].prices[0]<courses[i+1].prices[0]){
+	
+	for(let i=0; i<courses.length -1; i++) {
+		console.log(courses[i].prices[0])
+		console.log(courses[i+1].prices[0])
+		if(courses[i].prices[0] < courses[i+1].prices[0]){
 			resultArray.push(courses[i].name);
 		}
 	}
+	return resultArray
+	// courses[0].prices;
 }
 
 console.log(coursesSort());
+
+
+// console.log(courses[1].prices[1])
+

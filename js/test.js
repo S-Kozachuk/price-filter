@@ -42,6 +42,7 @@ function coursesSort(){
 			sortArray.push(courses[i].name);
 		}
 		/*
+		// 
 		if (courses[i].price[0] == null){
 			sortArray.push(courses[i].name)
 		}

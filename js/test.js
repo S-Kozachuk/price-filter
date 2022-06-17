@@ -38,8 +38,6 @@ console.log(coursesSort());
 function coursesSort(){
 	
 	for(let i=0; i<courses.length -1; i++) {
-		console.log(courses[i].prices[0])
-		console.log(courses[i+1].prices[0])
 		if(courses[i].prices[0] < courses[i+1].prices[0]){
 			resultArray.push(courses[i].name);
 		}

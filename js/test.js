@@ -37,6 +37,7 @@ console.log(coursesSort());
 /*
 Task: sorting all courses array to min value
 */
+/*
 let emptyValue = 0;
 function coursesSort(){
 	for(let i=0; i<courses.length -1; i++) {
@@ -56,4 +57,13 @@ function coursesSort(){
 
 console.log(coursesSort());
 console.log(emptyValue);
+*/
+
+// 3
+courses.sort(function(a,b){
+	return a.prices[0] - b.prices[0];
+})
+
+console.log(courses);
+console.log(sortArray);
 

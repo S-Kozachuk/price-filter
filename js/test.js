@@ -34,33 +34,26 @@ console.log(coursesSort());
 */
 
 // 2-nd variant
-
-
+/*
+Task: sorting all courses array to min value
+*/
+let emptyValue = 0;
 function coursesSort(){
 	for(let i=0; i<courses.length -1; i++) {
-		if (courses[i].prices[0] < courses[i+1].prices[0]){
-			sortArray.push(courses[i].name);
-		}
-		/*
-		// 
-		if (courses[i].price[0] == null){
+		let	a = courses[i].prices[0],
+			b = courses[i+1].prices[0];
+		
+		if (a == null) {
 			sortArray.push(courses[i].name)
+			emptyValue++;
 		}
-		else if (courses[i].prices[0] < courses[i+1].prices[0]){
+		if (a < b){
 			sortArray.push(courses[i].name);
 		}
-		/*
-		else {
-			sortArray.push(courses[i+1].name);
-		}
-		*/
 	}
-	return sortArray
-	// courses[0].prices;
+	return sortArray;
 }
 
 console.log(coursesSort());
-
-
-// console.log(courses[1].prices[1])
+console.log(emptyValue);
 

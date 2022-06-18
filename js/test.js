@@ -59,7 +59,8 @@ console.log(coursesSort());
 console.log(emptyValue);
 */
 
-// 3
+// 3-rd varian (sort method)
+// Rewrite with slice()
 courses.sort(function(a,b){
 	return a.prices[0] - b.prices[0];
 })

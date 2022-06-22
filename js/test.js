@@ -18,6 +18,8 @@ let requiredRange3 = [200, null];
 let resultArray = [];
 let sortArray = [];
 
+console.log(courses)
+
 // 1-st variant
 /*
 function coursesSort(){
@@ -33,7 +35,7 @@ function coursesSort(){
 console.log(coursesSort());
 */
 
-// 2-nd variant
+// 2-nd variant (with V.I.)
 /*
 Task: sorting all courses array to min value
 */
@@ -59,12 +61,15 @@ console.log(coursesSort());
 console.log(emptyValue);
 */
 
-// 3-rd varian (sort method)
-// Rewrite with slice()
-courses.sort(function(a,b){
+// 3-rd varian (sort method)	
+function resultSort(a, b) {
+	if(a.prices[0] == null){
+		return a = -1;
+	}
 	return a.prices[0] - b.prices[0];
-})
+};
+//courses.sort(resultSort); with rewriting origin Array
+let coursesSort = courses.slice().sort(resultSort);
 
-console.log(courses);
-console.log(sortArray);
+console.log(coursesSort);
 

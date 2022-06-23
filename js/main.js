@@ -37,22 +37,18 @@ function coursesFilter (filter){
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
 						resultArray.push(courses[i].name);
-						sortArray.push(courses[i].prices[0]);
-						sortArray.push(courses[i].prices[1]);
+						// sortArray.push(courses[i].prices[0]);
+						// sortArray.push(courses[i].prices[1]);
 					}
 				}
 				else {
 					resultArray.push(courses[i].name);
-					sortArray.push(courses[i].prices[0]);
-					sortArray.push(courses[i].prices[1]);
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
 						resultArray.push(courses[i].name);
-						sortArray.push(courses[i].prices[0]);
-						sortArray.push(courses[i].prices[1]);
 					}
 				}
 			}
@@ -61,8 +57,6 @@ function coursesFilter (filter){
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
 					resultArray.push(courses[i].name);
-					sortArray.push(courses[i].prices[0]);
-					sortArray.push(courses[i].prices[1]);
 				}
 			}
 		}
@@ -74,7 +68,6 @@ function coursesOutput (FilterValue) {
 		resultArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
-		console.log(sortArray);
 		/*	
 		sortArray.sort((a, b) => a - b);
 		console.log(resultArray);

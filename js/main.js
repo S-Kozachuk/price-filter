@@ -76,9 +76,9 @@ function coursesOutput(FilterValue) {
 		});
 		
 		// Console output (debugging)
-		console.log(filterArray);
-		console.log(sortArray);
-		console.log(outputArray);
+		console.log(filterArray); // After filtered
+		console.log(sortArray); // Sorted after filtering
+		console.log(outputArray); // Ouput of courses names
 		
 		// Cleaning output
 		outputArray = [];

@@ -66,36 +66,25 @@ function coursesFilter (filter){
 
 function coursesOutput (FilterValue) {
 		coursesFilter(FilterValue);	
-		/*
-		resultArray.forEach((item, index) => {
-			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
-		});
-		*/
-		
-		console.log(resultArray);
 		sortArray = resultArray.slice().sort(resultSort);
-		console.log(sortArray);
 		for(let i=0; i<sortArray.length; i++) {
 			outputArray.push(sortArray[i].name);
 		}
-		console.log(outputArray);
-
-		/*
-		coursesSort.forEach((item, index) => {
+		outputArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
-		*/
+		console.log(resultArray);
+		console.log(sortArray);
+		console.log(outputArray);
 }
 
+// Sorting function
 function resultSort(a, b) {
 	if(a.prices[0] == null){
 		return a = -1;
 	}
 	return a.prices[0] - b.prices[0];
 };
-
-//courses.sort(resultSort); with rewriting origin Array
-
 
 // Button 1
 filterOne.addEventListener('click',()=>{

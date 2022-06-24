@@ -68,11 +68,6 @@ function coursesOutput (FilterValue) {
 		resultArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
-		/*	
-		sortArray.sort((a, b) => a - b);
-		console.log(resultArray);
-		console.log(sortArray);
-		*/
 }
 
 // Button 1

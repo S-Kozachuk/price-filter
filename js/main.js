@@ -36,19 +36,19 @@ function coursesFilter (filter){
 			if(minPrice != null && minPrice >= a) {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						resultArray.push(courses[i].name);
+						resultArray.push(courses[i]);
 						// sortArray.push(courses[i].prices[0]);
 						// sortArray.push(courses[i].prices[1]);
 					}
 				}
 				else {
-					resultArray.push(courses[i].name);
+					resultArray.push(courses[i]);
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						resultArray.push(courses[i].name);
+						resultArray.push(courses[i]);
 					}
 				}
 			}
@@ -56,7 +56,7 @@ function coursesFilter (filter){
 		else {
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
-					resultArray.push(courses[i].name);
+					resultArray.push(courses[i]);
 				}
 			}
 		}
@@ -65,10 +65,26 @@ function coursesFilter (filter){
 
 function coursesOutput (FilterValue) {
 		coursesFilter(FilterValue);	
+		/*
 		resultArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
+		*/
+		
+		console.log(resultArray);
+		let coursesSort = resultArray.slice().sort(resultSort);
+		console.log(coursesSort);
 }
+
+function resultSort(a, b) {
+	if(a.prices[0] == null){
+		return a = -1;
+	}
+	return a.prices[0] - b.prices[0];
+};
+
+//courses.sort(resultSort); with rewriting origin Array
+
 
 // Button 1
 filterOne.addEventListener('click',()=>{

@@ -22,6 +22,7 @@ const filterThree = document.querySelector('.filter-three');
 const output = document.querySelector('.result')
 let resultArray = [];
 let sortArray = [];
+let outputArray = [];
 
 function coursesFilter (filter){
 	resultArray = [];
@@ -72,8 +73,18 @@ function coursesOutput (FilterValue) {
 		*/
 		
 		console.log(resultArray);
-		let coursesSort = resultArray.slice().sort(resultSort);
-		console.log(coursesSort);
+		sortArray = resultArray.slice().sort(resultSort);
+		console.log(sortArray);
+		for(let i=0; i<sortArray.length; i++) {
+			outputArray.push(sortArray[i].name);
+		}
+		console.log(outputArray);
+
+		/*
+		coursesSort.forEach((item, index) => {
+			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
+		});
+		*/
 }
 
 function resultSort(a, b) {

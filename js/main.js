@@ -20,12 +20,12 @@ const filterOne = document.querySelector('.filter-one');
 const filterTwo = document.querySelector('.filter-two');
 const filterThree = document.querySelector('.filter-three');
 const output = document.querySelector('.result')
-let resultArray;
+let filterArray;
 let sortArray = [];
 let outputArray = [];
 
-function coursesFilter (filter){
-	resultArray = [];
+function coursesFilter(filter) {
+	filterArray = [];
 	a = filter[0], // Min filter value 
 	b = filter[1]; // Max filter value
 
@@ -37,19 +37,19 @@ function coursesFilter (filter){
 			if(minPrice != null && minPrice >= a) {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						resultArray.push(courses[i]);
+						filterArray.push(courses[i]);
 						// sortArray.push(courses[i].prices[0]);
 						// sortArray.push(courses[i].prices[1]);
 					}
 				}
 				else {
-					resultArray.push(courses[i]);
+					filterArray.push(courses[i]);
 				}
 			}
 			else {
 				if(b != null) {
 					if(maxPrice != null && maxPrice <= b){
-						resultArray.push(courses[i]);
+						filterArray.push(courses[i]);
 					}
 				}
 			}
@@ -57,16 +57,16 @@ function coursesFilter (filter){
 		else {
 			if(b != null) {
 				if(maxPrice != null && maxPrice <= b){
-					resultArray.push(courses[i]);
+					filterArray.push(courses[i]);
 				}
 			}
 		}
 	}
 };
 
-function coursesOutput (FilterValue) {
+function coursesOutput(FilterValue) {
 		coursesFilter(FilterValue);	
-		sortArray = resultArray.slice().sort(resultSort);
+		sortArray = filterArray.slice().sort(resultSort);
 		for(let i=0; i<sortArray.length; i++) {
 			outputArray.push(sortArray[i].name);
 		}
@@ -76,7 +76,7 @@ function coursesOutput (FilterValue) {
 		});
 		
 		// Console output (debugging)
-		console.log(resultArray);
+		console.log(filterArray);
 		console.log(sortArray);
 		console.log(outputArray);
 		

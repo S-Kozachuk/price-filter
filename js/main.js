@@ -20,7 +20,7 @@ const filterOne = document.querySelector('.filter-one');
 const filterTwo = document.querySelector('.filter-two');
 const filterThree = document.querySelector('.filter-three');
 const output = document.querySelector('.result')
-let resultArray = [];
+let resultArray;
 let sortArray = [];
 let outputArray = [];
 
@@ -70,12 +70,18 @@ function coursesOutput (FilterValue) {
 		for(let i=0; i<sortArray.length; i++) {
 			outputArray.push(sortArray[i].name);
 		}
+		
 		outputArray.forEach((item, index) => {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
+		
+		// Console output (debugging)
 		console.log(resultArray);
 		console.log(sortArray);
 		console.log(outputArray);
+		
+		// Cleaning output
+		outputArray = [];
 }
 
 // Sorting function

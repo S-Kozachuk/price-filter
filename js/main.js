@@ -15,7 +15,7 @@ let requiredRange1 = [null, 200];
 let requiredRange2 = [100, 350];
 let requiredRange3 = [200, null];
 
-// Filter function
+// Variables
 const filterOne = document.querySelector('.filter-one');
 const filterTwo = document.querySelector('.filter-two');
 const filterThree = document.querySelector('.filter-three');
@@ -24,6 +24,7 @@ let filterArray;
 let sortArray = [];
 let outputArray = [];
 
+// Filter function
 function coursesFilter(filter) {
 	filterArray = [];
 	a = filter[0], // Min filter value 
@@ -64,26 +65,6 @@ function coursesFilter(filter) {
 	}
 };
 
-function coursesOutput(FilterValue) {
-		coursesFilter(FilterValue);	
-		sortArray = filterArray.slice().sort(resultSort);
-		for(let i=0; i<sortArray.length; i++) {
-			outputArray.push(sortArray[i].name);
-		}
-		
-		outputArray.forEach((item, index) => {
-			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
-		});
-		
-		// Console output (debugging)
-		console.log(filterArray); // After filtered
-		console.log(sortArray); // Sorted after filtering
-		console.log(outputArray); // Ouput of courses names
-		
-		// Cleaning output
-		outputArray = [];
-}
-
 // Sorting function
 function resultSort(a, b) {
 	if(a.prices[0] == null){
@@ -91,6 +72,25 @@ function resultSort(a, b) {
 	}
 	return a.prices[0] - b.prices[0];
 };
+
+// Ouput finction
+function coursesOutput(FilterValue) {
+		coursesFilter(FilterValue);	
+		sortArray = filterArray.slice().sort(resultSort);
+		for(let i=0; i<sortArray.length; i++) {
+			outputArray.push(sortArray[i].name);
+		};
+		outputArray.forEach((item, index) => {
+			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
+		});
+		// Console output (debugging)
+		console.log(filterArray); // After filtered
+		console.log(sortArray); // Sorted after filtering
+		console.log(outputArray); // Ouput of courses names
+		// Cleaning output
+		outputArray = [];
+}
+
 
 // Button 1
 filterOne.addEventListener('click',()=>{

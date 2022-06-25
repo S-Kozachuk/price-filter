@@ -84,6 +84,7 @@ function coursesOutput(FilterValue) {
 			output.innerHTML+=`<h2>${index+1}. ${item}</h2>`;
 		});
 		// Console output (debugging)
+		console.clear(); // Console clean
 		console.log(filterArray); // After filtered
 		console.log(sortArray); // Sorted after filtering
 		console.log(outputArray); // Ouput of courses names
